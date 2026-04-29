@@ -1,0 +1,49 @@
+# OS
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# Editors
+.vscode/
+.idea/
+*.swp
+*~
+
+# CAD scratch files
+*.f3d.bak
+*.step.bak
+*.bak.f3d
+~$*
+*.tmp
+
+# Slicer outputs we don't track (we DO track .gcode for known-good prints)
+# Comment the next two lines if you want every gcode tracked
+*.gcode.tmp
+
+# ArduPilot binaries — track only the .apj we actually flashed
+*.hex
+!builds/*/firmware/flashed/*.hex
+
+# Flight log raw binaries (large) — track the converted .csv/.tlog
+builds/*/flight-logs/raw/*.bin
+builds/*/flight-logs/raw/*.BIN
+
+# Python
+__pycache__/
+*.pyc
+.venv/
+venv/
+
+# Node (in case we add tooling)
+node_modules/
+
+# Build artifacts
+build/
+dist/
+*.egg-info/
+
+# Secrets — should never be committed
+*.key
+*.pem
+secrets.yaml
+.env
