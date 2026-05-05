@@ -37,6 +37,14 @@ Increment version on any geometry change. **Never edit a versioned file in place
 - `main` is always known-good. Pushing broken code there delays the next flight.
 - Work on `vN/<short-feature>` branches. Merge to main when the change has been validated (printed and fitted, or flashed and tested).
 
+## Catalog entries
+
+`hardware-library/parts-catalog/cat-NNN-name.md` files follow the format documented in `hardware-library/parts-catalog/README.md`. Key rules:
+
+- `cat-NNN` IDs are immutable. Don't renumber.
+- A catalog entry is design knowledge: abstract spec, ranked SKUs, reorder guidance, last-known prices.
+- Update `Last verified` whenever prices or SKU rankings change.
+
 ## What to commit, what not to
 
 | Commit | Don't commit |

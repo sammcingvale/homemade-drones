@@ -11,12 +11,14 @@ drone-program/
 │   ├── safety-checklist.md
 │   └── repo-conventions.md
 ├── tools/                   # scripts shared across builds
-├── hardware-library/        # reusable CAD components (populated as we go)
+├── hardware-library/        # reusable parts catalog, kits, CAD
+│   ├── parts-catalog/       # abstract part specs + ranked SKUs + reorder guidance
+│   └── kits/                # packing lists for field/bench operations
 └── builds/
     ├── v1/                  # build #1 — learning vehicle, fly ASAP
     │   ├── README.md        # build summary + status
     │   ├── requirements.md  # frozen requirements doc for this build
-    │   ├── bom.md           # bill of materials (electronics + frame)
+    │   ├── bom.md           # bill of materials (references catalog by cat-NNN)
     │   ├── tooling.md       # tools required to assemble
     │   ├── cad/             # 3D models — one folder per part
     │   ├── firmware/        # ArduCopter firmware + parameters

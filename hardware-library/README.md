@@ -1,13 +1,25 @@
 # hardware-library/
 
-Reusable hardware components that have proven themselves across multiple builds.
+Cross-build hardware design knowledge: parts catalog, kits, and (eventually) reusable CAD components.
 
-Empty for v1. Components graduate here from `builds/vN/cad/` once they've been used in 2+ builds without modification.
+## Subfolders
 
-Examples of what would belong here eventually:
+```
+hardware-library/
+├── parts-catalog/    # Abstract part specs + ranked SKU lists + reorder guidance
+├── kits/             # Packing lists for field/bench operations
+└── (cad/)            # Reusable CAD components — populated when parts graduate from a build
+```
 
-- A standardized GPS mast (if the v1 design proves itself in v2).
-- ELRS receiver antenna mount (likely identical from v1 onward).
-- Heat-set insert reference geometry (boss + hole specs for embedding M3 inserts).
+## What lives here vs. what doesn't
 
-Convention: each component has its own folder with the same structure as a build CAD folder (STEP, 3MF, profile, notes).
+This folder holds **design knowledge** that spans builds: which parts are acceptable, why we picked them, what they're for. It's version-controlled, infrequently mutated, and tied to the project.
+
+It deliberately does **not** hold operational state — current on-hand counts, order history, who-touched-what-when. Those live outside the repo and are owned by tooling that operates across multiple projects.
+
+## Catalog vs. BOM
+
+- **Catalog** (`parts-catalog/`): "what parts are acceptable for builds in this project, ranked by preference."
+- **BOM** (`builds/vN/bom.md`): "what was procured for this specific build, at what price, on what date."
+
+A build's BOM references catalog entries by ID. The catalog is the abstract spec; the BOM is the concrete procurement record for one build.
