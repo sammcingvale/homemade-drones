@@ -1,71 +1,75 @@
 # v1 — Bill of Materials
 
 **Status:** Ready to order
-**Last verified:** 2026-04-29
-**Total estimated cost:** ~$1,290 (one-time + per-airframe; see breakdown at bottom)
+**Version:** v1.1
+**Last verified:** 2026-05-05
+**Vendor policy:** GetFPV preferred → RDQ → mfr-direct → Amazon (non-flight only)
 
-Prices are approximate and may shift between order date and arrival. Verify at checkout. All vendors listed ship to US.
+> **Note on freshness:** Vendors and prices change. Verify each line at order time using the linked catalog entry (which holds the ranked SKU list and last-known prices). After ordering, this file becomes a frozen procurement record.
+
+> **Note on stock:** As of 2026-05-04, several core SKUs were OOS at GetFPV (frame, FC stack, motors). Verify stock or be prepared to fall back to rank-2 SKUs in each catalog entry.
+
+---
 
 ## Airframe + electronics (per airframe)
 
-| # | Slot | SKU | Vendor | Qty | Unit | Subtotal | Notes |
-|---|---|---|---|---|---|---|---|
-| 1 | Frame | Source One V5 5" Base Kit (no top plate) | RDQ / GetFPV | 1 | $25 | $25 | Open-source, ubiquitous. Order spare arms ($8) — likely needed before v1 retires. |
-| 2 | FC + ESC stack | SpeedyBee F405 V4 BLS 55A 30x30 Stack | GetFPV / Pyrodrone / Amazon | 1 | $70 | $70 | ArduCopter-supported. Includes FC + 4-in-1 ESC. |
-| 3 | Motors | EMAX ECO II 2207 1900KV | RDQ / GetFPV | 4 | $15 | $60 | Set of 4. Spec match: 4S, 5" prop. |
-| 4 | Props | HQProp T5x4.3x3 (5-inch tri-blade) | RDQ / GetFPV | 4 sets | $3 | $12 | Get 4 sets minimum — they break. Set = 2CW + 2CCW. |
-| 5 | GPS + compass | Matek M10Q-5883 GNSS+Compass | RDQ / Matek direct | 1 | $45 | $45 | u-blox M10, QMC5883L mag. ArduCopter-ready. |
-| 6 | RC receiver | BetaFPV ELRS Lite Receiver (2.4GHz) | BetaFPV / GetFPV | 1 | $20 | $20 | T-antenna, solder-pad mount. |
-| 7 | Telemetry radio (air) | Holybro SiK Telemetry Radio V3 915MHz (pair) | Holybro / GetFPV | 1 pair | $65 | $65 | One end on drone, one on Toughbook (USB). 915MHz = US-legal. |
-| 8 | Spare FC + ESC | SpeedyBee F405 V4 BLS 55A Stack | (same) | 1 | $70 | $70 | Hedge against first-build solder mistakes. |
-| | | | **Airframe + electronics subtotal** | | | **$367** | |
+| # | Catalog | Description | Qty | Unit (last seen) | Subtotal | Notes |
+|---|---|---|---|---|---|---|
+| 1 | [cat-001](../../hardware-library/parts-catalog/cat-001-frame-5in.md) | 5" frame (Source One V5) | 1 | $39 | $39 | TBS-branded at GetFPV preferred |
+| 2 | [cat-002](../../hardware-library/parts-catalog/cat-002-fc-stack-30x30.md) | F405 V4 BLS 55A 30×30 stack | 1 | $94 | $94 | ArduCopter-supported |
+| 3 | [cat-003](../../hardware-library/parts-catalog/cat-003-motor-2207.md) | 2207 1900KV motors | 4 | $20 | $80 | Order set of 4 |
+| 4 | [cat-004](../../hardware-library/parts-catalog/cat-004-prop-5in-tri.md) | 5×4.3×3 tri-blade props | 16 | $1 | $16 | 4 sets of 4 |
+| 5 | [cat-005](../../hardware-library/parts-catalog/cat-005-gps-compass.md) | M10 GPS + compass (Holybro) | 1 | $45 | $45 | **Replaced Matek M10Q-5883 (EOL)** |
+| 6 | [cat-006](../../hardware-library/parts-catalog/cat-006-rx-elrs-24ghz.md) | ELRS 2.4GHz RX (Tower antenna) | 1 | $9 | $9 | Tower variant for canopy-mount build |
+| 7 | [cat-007](../../hardware-library/parts-catalog/cat-007-telem-radio-915mhz.md) | SiK V3 915MHz pair, **100mW** | 1 pair | $60 | $60 | 100mW chosen — range margin sufficient |
+| 8 | [cat-002](../../hardware-library/parts-catalog/cat-002-fc-stack-30x30.md) | Spare FC + ESC stack | 1 | $94 | $94 | Hedge against first-build solder mistakes |
+| | | **Airframe + electronics subtotal** | | | **$437** | |
 
-## Power & charging (one-time except batteries)
+## Power & charging
 
-| # | Slot | SKU | Vendor | Qty | Unit | Subtotal | Notes |
-|---|---|---|---|---|---|---|---|
-| 9 | Battery | CNHL Black Series 1500mAh 4S 100C XT60 | CNHL direct (US warehouse) / GetFPV | 4 | $25 | $100 | 4 packs minimum for a real session. |
-| 10 | Charger | ToolkitRC M7AC | RDQ / GetFPV / Amazon | 1 | $70 | $70 | Built-in AC, no separate PSU needed. |
-| 11 | LiPo bag | Generic large LiPo bag (12"×9") | Amazon | 1 | $15 | $15 | Charging + storage + transport. |
-| 12 | Smoke stopper | Generic XT60 inline smoke stopper | RDQ / GetFPV | 1 | $15 | $15 | First power-up safety. Use every revision. |
-| | | | **Power subtotal** | | | **$200** | |
+| # | Catalog | Description | Qty | Unit | Subtotal | Notes |
+|---|---|---|---|---|---|---|
+| 9 | [cat-008](../../hardware-library/parts-catalog/cat-008-battery-4s-1500.md) | 1500mAh 4S 100C XT60 LiPo (CNHL Black) | 4 | $28 | $112 | Bought via GetFPV per vendor policy |
+| 10 | (uncataloged) | ToolkitRC M7AC charger | 1 | $70 | $70 | One-time |
+| 11 | (uncataloged) | LiPo charge/transport bag | 1 | $15 | $15 | One-time |
+| 12 | (uncataloged) | Smoke stopper (XT60 inline) | 1 | $15 | $15 | One-time |
+| | | **Power subtotal** | | | **$212** | |
 
 ## Radio (TX) — one-time
 
-| # | Slot | SKU | Vendor | Qty | Unit | Subtotal | Notes |
-|---|---|---|---|---|---|---|---|
-| 13 | Transmitter | RadioMaster Pocket (ELRS, M2 sticks) | RadioMaster / GetFPV / Amazon | 1 | $80 | $80 | Built-in ELRS at 2.4GHz. EdgeTX firmware. |
-| 14 | TX charger | USB-C cable (any) | (have) | 1 | — | — | Pocket charges via USB-C. |
-| | | | **Radio subtotal** | | | **$80** | |
+| # | Catalog | Description | Qty | Unit | Subtotal | Notes |
+|---|---|---|---|---|---|---|
+| 13 | (uncataloged — fixed asset) | RadioMaster Pocket (ELRS, M2 sticks) | 1 | $80 | $80 | EdgeTX firmware |
+| | | **Radio subtotal** | | | **$80** | |
 
 ## Ground station — one-time
 
-| # | Slot | SKU | Vendor | Qty | Unit | Subtotal | Notes |
-|---|---|---|---|---|---|---|---|
-| 15 | Field laptop | Used Panasonic Toughbook CF-54 w/ daylight-readable screen, Win 10/11, ≥8GB RAM | eBay (search "Toughbook CF-54 sunlight") | 1 | $400 | $400 | Verify "outdoor" or "1000-nit" screen variant. Refurbished from a reputable seller. |
-| 16 | USB-A extender | 6ft USB 2.0 A-male to A-female cable | Amazon | 1 | $8 | $8 | Lets the SiK radio sit clear of the laptop on the ground station table. |
-| | | | **Ground station subtotal** | | | **$408** | |
+| # | Catalog | Description | Qty | Unit | Subtotal | Notes |
+|---|---|---|---|---|---|---|
+| 14 | (uncataloged — fixed asset) | Used Panasonic Toughbook CF-54 (daylight-readable screen, Win 10/11, ≥8GB) | 1 | $400 | $400 | eBay; verify "outdoor" variant |
+| 15 | (uncataloged) | USB-A extender 6ft | 1 | $8 | $8 | |
+| | | **Ground station subtotal** | | | **$408** | |
 
 ## Filament
 
-| # | SKU | Vendor | Qty | Unit | Subtotal | Notes |
+| # | Catalog | Description | Qty | Unit | Subtotal | Notes |
 |---|---|---|---|---|---|---|
-| 17 | Bambu PETG Basic, 1kg, black | Bambu Lab | 1 | $25 | $25 | Canopy, mast, battery tray. |
-| 18 | Bambu TPU 95A HF, 0.5kg, black | Bambu Lab | 1 | $35 | $35 | Soft mounts, antenna tubes. |
-| | | **Filament subtotal** | | | **$60** | |
+| 16 | [cat-009](../../hardware-library/parts-catalog/cat-009-filament-petg.md) | PETG Basic, 1kg, black (Bambu) | 1 | $20 | $20 | Watch for sale ($13 recent) |
+| 17 | [cat-010](../../hardware-library/parts-catalog/cat-010-filament-tpu95a.md) | TPU 95A HF, **1kg**, black (Bambu) | 1 | $42 | $42 | **Corrected from BOM v1.0 (was 0.5kg, doesn't exist)** |
+| | | **Filament subtotal** | | | **$62** | |
 
-## Hardware (M3 / M2 + heat-set inserts)
+## Hardware
 
-| # | SKU | Vendor | Qty | Unit | Subtotal | Notes |
+| # | Catalog | Description | Qty | Unit | Subtotal | Notes |
 |---|---|---|---|---|---|---|
-| 19 | M3 SHCS assortment kit (8mm, 10mm, 12mm, 16mm, 20mm) | Amazon | 1 | $15 | $15 | Stainless or 12.9 alloy. |
-| 20 | M3 nylon-insert lock nuts ×50 | Amazon | 1 | $8 | $8 | Frame motor mounts. |
-| 21 | M3 heat-set inserts ×100 (brass) | Amazon | 1 | $12 | $12 | For printed parts. Install with soldering iron. |
-| 22 | M2 SHCS assortment | Amazon | 1 | $10 | $10 | Electronics-side. |
-| 23 | Velcro battery straps (200mm ×3) | Amazon / RDQ | 1 pack | $10 | $10 | |
-| 24 | 3M VHB tape, 1/2" wide | Amazon | 1 | $8 | $8 | RX, telem radio mount. |
-| 25 | Zip ties assortment | Amazon | 1 | $8 | $8 | |
-| 26 | Heat shrink tubing kit | Amazon | 1 | $10 | $10 | |
+| 18 | [cat-011](../../hardware-library/parts-catalog/cat-011-m3-shcs-kit.md) | M3 SHCS assortment kit | 1 | $15 | $15 | |
+| 19 | [cat-012](../../hardware-library/parts-catalog/cat-012-m3-nyloc-nuts.md) | M3 nyloc nuts ×50 | 1 | $8 | $8 | |
+| 20 | [cat-013](../../hardware-library/parts-catalog/cat-013-m3-heat-inserts.md) | M3 brass heat-set inserts ×100 | 1 | $12 | $12 | |
+| 21 | (uncataloged, low-volume) | M2 SHCS assortment | 1 | $10 | $10 | |
+| 22 | (uncataloged, low-volume) | Velcro battery straps ×3 | 1 pack | $10 | $10 | |
+| 23 | (uncataloged, low-volume) | 3M VHB tape, 1/2" | 1 | $8 | $8 | |
+| 24 | (uncataloged, low-volume) | Zip ties assortment | 1 | $8 | $8 | |
+| 25 | (uncataloged, low-volume) | Heat shrink tubing kit | 1 | $10 | $10 | |
 | | | **Hardware subtotal** | | | **$81** | |
 
 ---
@@ -74,38 +78,41 @@ Prices are approximate and may shift between order date and arrival. Verify at c
 
 | Category | Cost |
 |---|---|
-| Airframe + electronics (incl. spare FC stack) | $367 |
-| Power & charging | $200 |
+| Airframe + electronics (incl. spare FC) | $437 |
+| Power & charging | $212 |
 | Radio (TX) | $80 |
 | Ground station | $408 |
-| Filament | $60 |
+| Filament | $62 |
 | Hardware | $81 |
-| Tools (see `tooling.md`) | $235 |
-| **Total v1 build** | **~$1,431** |
+| Tools (see `tooling.md`) | $311 |
+| Solder consumables (cat-014, included in tooling) | — |
+| **Total v1 build** | **~$1,591** |
 
 ### Per-airframe cost (v2+ when tools/radio/laptop already owned)
 
-- Airframe + electronics minus spare FC: $297
-- 4 batteries: $100 (probably reuse some)
+- Airframe + electronics minus spare FC: $343
+- 4 batteries: ~$112 (some reusable from v1)
 - Filament (per-print share): ~$10
-- Hardware: ~$30 (heat-set inserts already owned; just frame screws, straps)
-- **Per-additional-airframe: ~$340–440**
+- Hardware: ~$30
+- **Per-additional-airframe: ~$370–490**
 
 ---
 
-## Vendor notes
+## Changes from v1.0
 
-- **GetFPV / RDQ (Race Day Quads) / Pyrodrone:** US-based hobby distributors. Frame kits, motors, FCs, props. Solid for everything except batteries (slow shipping due to LiPo regulations).
-- **CNHL:** Has a US warehouse. Faster than ordering from China. Decent prices.
-- **Bambu Lab:** Filament direct from manufacturer. Other brands (Polymaker, Overture, Prusament) also fine.
-- **Holybro / Matek:** Drone hardware specialists. Can buy direct or through distributors.
-- **Amazon:** Use for hardware (screws, tools), occasionally for FCs but verify SKU carefully — counterfeits exist.
+Driven by procurement research run on 2026-05-04:
 
-## Lead time planning
+1. **GPS swap.** Matek M10Q-5883 → Holybro M10 V2. Matek's M10 series is end-of-life. Holybro is in production, ArduPilot-supported, with bonus IP67 rating.
+2. **TPU SKU corrected.** Bambu doesn't sell TPU 95A HF in 0.5kg. Updated to 1kg ($42 vs old $35) — gets us 2× the filament for 20% more.
+3. **RX disambiguated.** Tower antenna variant chosen over Flat. Tower routes simply through canopy on outdoor builds; Flat is for racing layouts.
+4. **Telem radio wattage specified.** 100mW chosen (BOM previously left this open). 500mW was the suggested middle option but offers no benefit at <500m range — costs more, runs hotter.
+5. **Frame branding pinned.** TBS-branded Source One V5 at GetFPV chosen as canonical. RDQ and Pyrodrone variants stay as fallbacks (same open-source design).
+6. **Battery vendor changed.** GetFPV instead of CNHL-direct. Higher unit cost (~$28 vs $21) but resolves US warehouse routing ambiguity and matches single-vendor consolidation policy.
+7. **Prices refreshed.** Multiple lines saw +30–70% increase since BOM v1.0 (5 days ago). Reality is what's in the catalog now.
+8. **Format change.** Each line now references a catalog entry by ID. Catalog holds the ranked SKU list, abstract spec, and reorder guidance. BOM is just "what to procure for this build."
 
-- Order **today** (or today's evening): everything except the laptop.
-- Order Toughbook from eBay seller with ≤3-day shipping.
-- Bambu filament: Bambu's direct shipping is fast (~3 days US).
-- Total expected ship time: 3–5 business days for everything to arrive.
+## Outstanding flags
 
-If anything is backordered: skip the spare FC stack first (line 8), then reconsider in week 2.
+- Verify GetFPV stock at order time. Some core items were OOS as of 2026-05-04 — consider rank-2 SKUs in each catalog entry if still OOS.
+- Toughbook CF-54 listings vary widely on eBay. Verify "daylight-readable" (sometimes called "outdoor display" or "sunlight-readable") in the listing photos before buying.
+- Holybro M10 V2 cable connector may need clipping/resoldering to match SpeedyBee F405 V4 GPS pads. Plan for ~10 min of extra solder work.
