@@ -2,7 +2,7 @@
 
 **Catalog ID:** cat-002
 **Status:** active
-**Last verified:** 2026-05-05
+**Last verified:** 2026-05-10
 
 ## Abstract spec
 
@@ -21,7 +21,7 @@
 
 | Rank | Mfr part | Vendor | URL | Unit price | Notes |
 |---|---|---|---|---|---|
-| 1 | SpeedyBee F405 V4 BLS 55A 30x30 Stack | GetFPV | https://www.getfpv.com/speedybee-f405-v4-bls-55a-30x30-stack.html | ~$94 | OOS as of 2026-05-04 — verify |
+| 1 | SpeedyBee F405 V4 BLS 55A 30x30 Stack | GetFPV | https://www.getfpv.com/speedybee-f405-v4-stack-f4-v4-fc-55a-blheli-s-esc-30x30.html | $93.99 | OOS as of 2026-05-10 — check rank-2 stock first |
 | 2 | SpeedyBee F405 V4 BLS 55A 30x30 Stack | Pyrodrone | https://pyrodrone.com/ | ~$90 | check stock |
 | 3 | SpeedyBee F405 V4 BLS 55A 30x30 Stack | Amazon (SpeedyBee storefront) | Amazon search | varies | use only if mfr-fulfilled |
 

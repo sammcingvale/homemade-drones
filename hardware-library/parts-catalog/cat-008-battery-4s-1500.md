@@ -2,13 +2,13 @@
 
 **Catalog ID:** cat-008
 **Status:** active
-**Last verified:** 2026-05-05
+**Last verified:** 2026-05-10
 
 ## Abstract spec
 
 - 4S configuration (14.8V nominal, 16.8V full, 14.0V land-now threshold per ArduCopter `BATT_CRT_VOLT`)
 - 1300–1500 mAh capacity
-- ≥75C continuous discharge rating (100C preferred for headroom)
+- ≥100C continuous discharge rating
 - XT60 connector
 - JST-XH balance lead
 - ≤180g
@@ -18,9 +18,9 @@
 
 | Rank | Mfr part | Vendor | URL | Unit price | Notes |
 |---|---|---|---|---|---|
-| 1 | CNHL Black Series 1500mAh 4S 100C XT60 | GetFPV | https://www.getfpv.com/ | ~$28 | preferred — single-vendor consolidation |
-| 2 | CNHL Black Series 1500mAh 4S 100C XT60 | CNHL US warehouse | https://cnhl-us.com/ (verify URL at order time) | ~$21 | cheaper but warehouse routing ambiguous |
-| 3 | Tattu R-Line 1550mAh 4S 100C | GetFPV | https://www.getfpv.com/ | ~$32 | premium alternative |
+| 1 | CNHL Black Series V2.0 1500mAh 4S 130C XT60 | GetFPV | https://www.getfpv.com/ | $31.49 | in stock at GetFPV 2026-05-10. **130C strictly exceeds the spec floor.** Verify exact URL at order time. Replaces the V1 100C SKU which is no longer carried. |
+| 2 | CNHL Black Series 1500mAh 4S 100C XT60 (V1, older) | CNHL US warehouse | https://cnhl-us.com/ (verify URL at order time) | ~$21 | cheaper, older V1 spec — only use if rank-1 unavailable |
+| 3 | Tattu R-Line 1550mAh 4S 100C | GetFPV | https://www.getfpv.com/ | ~$32 | premium alternative; verify URL at order time |
 
 ## Reorder guidance
 

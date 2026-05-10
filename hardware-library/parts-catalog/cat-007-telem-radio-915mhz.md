@@ -2,7 +2,7 @@
 
 **Catalog ID:** cat-007
 **Status:** active
-**Last verified:** 2026-05-05
+**Last verified:** 2026-05-10
 
 ## Abstract spec
 
@@ -19,7 +19,7 @@
 
 | Rank | Mfr part | Vendor | URL | Unit price (pair) | Notes |
 |---|---|---|---|---|---|
-| 1 | Holybro SiK Telemetry Radio V3 915MHz 100mW (pair) | GetFPV | https://www.getfpv.com/ | ~$60 | verify wattage variant |
+| 1 | Holybro SiK Telemetry Radio V3 915MHz 100mW (pair) | GetFPV | https://www.getfpv.com/ | ~$39 | OOS at GetFPV 2026-05-10. Verify exact URL at order time. Price dropped ~35% from prior catalog ($60 → $39). |
 | 2 | Holybro SiK Telemetry Radio V3 915MHz 100mW (pair) | Holybro direct | https://holybro.com/ | ~$59 | manufacturer-direct |
 | 3 | RFD900x (US 915MHz) | mfr-direct | https://store.rfdesign.com.au/ | ~$200/pair | overkill for v1 — consider for v3+ long-range |
 

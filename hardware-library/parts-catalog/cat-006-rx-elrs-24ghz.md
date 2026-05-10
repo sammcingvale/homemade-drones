@@ -2,7 +2,7 @@
 
 **Catalog ID:** cat-006
 **Status:** active
-**Last verified:** 2026-05-05
+**Last verified:** 2026-05-10
 
 ## Abstract spec
 
@@ -19,9 +19,9 @@
 
 | Rank | Mfr part | Vendor | URL | Unit price | Notes |
 |---|---|---|---|---|---|
-| 1 | BetaFPV ELRS Lite Receiver (Tower antenna) | GetFPV | https://www.getfpv.com/ | ~$15 | verify exact variant |
-| 2 | BetaFPV ELRS Lite Receiver (Tower antenna) | BetaFPV direct | https://betafpv.com/ | ~$9 | manufacturer-direct, cheaper |
-| 3 | RadioMaster RP1 ELRS RX | GetFPV | https://www.getfpv.com/ | ~$15 | matches RadioMaster Pocket TX brand |
+| 1 | BetaFPV ELRS Lite 2.4GHz Receiver w/ Ceramic Tower antenna | GetFPV | https://www.getfpv.com/betafpv-elrs-lite-2-4ghz-receiver-w-ceramic-tower-antenna.html | ~$15 | OOS at GetFPV 2026-05-10. **Do not silently substitute the Flat-antenna variant — different geometry, mismatches canopy plan.** |
+| 2 | BetaFPV ELRS Lite 2.4GHz Receiver w/ Ceramic Tower antenna | BetaFPV direct | https://betafpv.com/ | ~$9 | manufacturer-direct, cheaper |
+| 3 | RadioMaster RP1 ELRS RX | GetFPV | https://www.getfpv.com/ | ~$15 | matches RadioMaster Pocket TX brand; verify URL at order time |
 
 ## Reorder guidance
 
@@ -31,5 +31,5 @@ Suggested trigger: on hand ≤ 1. Suggested order qty: 1.
 
 - TX and RX must run **matching ELRS firmware versions**. Update both at the same time.
 - Bind procedure: power TX in bind mode, power RX (3 quick power-cycles or hold bind button), they auto-pair.
-- Tower antenna (vertical) routes simply through the canopy. Flat antenna (T-shape) is for racing builds with top-mounted RX.
+- Tower antenna (vertical) routes simply through the canopy. **Flat antenna variant is a separate BetaFPV SKU at the same vendor — do not substitute.** Flat is for racing builds with top-mounted RX, not our Source One V5 canopy plan.
 - Always test RC link loss failsafe **on the bench** before any flight. Pull TX battery, verify RX outputs failsafe values to FC.
