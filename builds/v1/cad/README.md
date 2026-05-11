@@ -7,7 +7,7 @@ Printed parts for the v1 airframe.
 | Folder | Part | Filament | Status |
 |---|---|---|---|
 | `canopy/` | Top canopy + GPS/RX mount | PETG | ⚪ Not designed |
-| `gps-mast/` | GPS mast (≥80mm tall, RF-transparent) | PETG | ⚪ Not designed |
+| `gps-mast/` | GPS mast (≥80mm tall, RF-transparent) | PETG | 🟡 v1 designed, awaiting print + fit-check |
 | `antenna-mounts/` | ELRS receiver antenna tubes (×2) | TPU 95A | ⚪ Not designed |
 | `battery-tray/` | Battery tray + Velcro strap loop | PETG | ⚪ Not designed |
 | `motor-soft-mounts/` | Vibration-isolating motor mounts | TPU 95A | ⚪ Not designed |
@@ -20,18 +20,21 @@ Following `docs/repo-conventions.md`:
 ```
 <part-name>/
 ├── README.md                              # design intent, mounting, fit notes
-├── <part-name>-v1.step                    # source of truth (parametric CAD export)
-├── <part-name>-v1.3mf                     # slicer-ready file (with profile baked in)
-├── <part-name>-v1.stl                     # mesh export (optional, for non-Bambu printers)
+├── <part-name>-v1.py                      # source of truth (CadQuery / Python)
+├── <part-name>-v1.step                    # exported from .py — kept in git for non-Python reviewers
+├── <part-name>-v1.stl                     # exported from .py — direct slice in Bambu Studio
+├── <part-name>-v1.3mf                     # slicer-ready, profile baked in (from Bambu Studio)
 ├── <part-name>-v1.slicer-profile.json     # exported Bambu Studio profile
 └── notes.md                               # print orientation, supports, lessons
 ```
 
 Increment the version (`v2`, `v3`) for any geometry change. Old versions stay — we keep history.
 
-## CAD tool recommendation
+## CAD tool
 
-Any parametric tool works. Suggested: **Autodesk Fusion 360** (free for personal use, good ecosystem) or **OnShape** (free, browser-based, great Git-like versioning). FreeCAD is OK but rougher. Avoid mesh-only tools (Tinkercad, Blender) for structural parts — STEP export matters for reuse.
+[CadQuery](https://cadquery.readthedocs.io/) (parametric Python). `.py` files are source of truth, STEP and STL are exported artifacts. See `tools/cad/README.md` for env setup.
+
+Why: plain-text, diff-friendly, branch-mergeable, AI-editable. STEP export is reusable in Fusion 360 / OnShape / FreeCAD if a part graduates later.
 
 ## Print parameters (Bambu P2S, 0.4mm stock nozzle)
 
