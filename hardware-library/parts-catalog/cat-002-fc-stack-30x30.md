@@ -2,7 +2,7 @@
 
 **Catalog ID:** cat-002
 **Status:** active
-**Last verified:** 2026-05-10
+**Last verified:** 2026-05-11
 
 ## Abstract spec
 
@@ -21,9 +21,9 @@
 
 | Rank | Mfr part | Vendor | URL | Unit price | Notes |
 |---|---|---|---|---|---|
-| 1 | SpeedyBee F405 V4 BLS 55A 30x30 Stack | GetFPV | https://www.getfpv.com/speedybee-f405-v4-stack-f4-v4-fc-55a-blheli-s-esc-30x30.html | $93.99 | OOS as of 2026-05-10 — check rank-2 stock first |
-| 2 | SpeedyBee F405 V4 BLS 55A 30x30 Stack | Pyrodrone | https://pyrodrone.com/ | ~$90 | check stock |
-| 3 | SpeedyBee F405 V4 BLS 55A 30x30 Stack | Amazon (SpeedyBee storefront) | Amazon search | varies | use only if mfr-fulfilled |
+| 1 | Kakute H7 v1.5 + Tekko32 F4 4in1 50A ESC Stack | Holybro direct | https://holybro.com/products/kakute-h7-v1-stacks | $124.99 | **promoted from rank-3 on 2026-05-11** after SpeedyBee F405 V4 went OOS across all distributors. Variant selector at checkout: pick "Kakute H7 v1.5 / Tekko32 F4 4in1 50A ESC". 65A "Metal" variant exists at $149.99 — overkill for v1's 5"/4S build. |
+| 2 | SpeedyBee F405 V4 BLS 55A 30x30 Stack | GetFPV | https://www.getfpv.com/speedybee-f405-v4-stack-f4-v4-fc-55a-blheli-s-esc-30x30.html | $93.99 | cheaper but OOS at GetFPV and Pyrodrone as of 2026-05-11. Earlier rank-1; demoted when stock disappeared. |
+| 3 | SpeedyBee F405 V3 BLS 50A 30x30 Stack | GetFPV / Pyrodrone | (verify at order time) | ~$80–90 | older revision, same form factor and ArduPilot family. Use if V4 stays OOS and Kakute is also unavailable. |
 
 ## Reorder guidance
 
@@ -31,7 +31,11 @@ Suggested trigger: on hand ≤ 1. Suggested order qty: 1.
 
 ## Notes
 
-- Board ships with Betaflight. **First-time flash to ArduCopter requires DFU mode + STM32CubeProgrammer.** See `builds/v1/firmware/README.md`.
-- ArduCopter target name: `SpeedyBeeF4V4` (firmware folder name on firmware.ardupilot.org).
+- ArduCopter target name depends on the SKU. Verify the target before flashing:
+  - Kakute H7 v1.5 (rank-1): `KakuteH7` — `https://firmware.ardupilot.org/Copter/stable/KakuteH7/`
+  - SpeedyBee F405 V4 (rank-2): `SpeedyBeeF4V4` — `https://firmware.ardupilot.org/Copter/stable/SpeedyBeeF4V4/`
+  - SpeedyBee F405 V3 (rank-3): `SpeedyBeeF4V3`
+- First-flash procedure differs by vendor. SpeedyBee stacks ship with Betaflight and need DFU + STM32CubeProgrammer for the first ArduCopter flash. Holybro Kakute stacks typically ship with a bootloader pre-installed; verify what firmware (if any) is on the board on receipt before deciding the flash path. See `builds/v1/firmware/README.md`.
+- Tekko32 4in1 ESCs ship with AM32 firmware (modern open-source successor to BLHeli_32). Supports DSHOT600 and bidirectional DSHOT out of the box.
 - Spare stack recommended for first-builders (cooked pads happen). v1 BOM includes one.
-- 6S-capable but we run 4S in v1. Don't mismatch motor KV with battery S-count.
+- 6S-capable (Kakute H7) but we run 4S in v1. Don't mismatch motor KV with battery S-count.

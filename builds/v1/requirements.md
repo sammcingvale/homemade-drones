@@ -133,7 +133,7 @@ Any 2207 motor in 1750–2000KV works. EMAX ECO II picked for cost + ubiquity. D
 
 | Slot | Spec | Selection | Notes |
 |---|---|---|---|
-| Flight controller + ESC | F405 stack, 30.5×30.5mm | SpeedyBee F405 V4 BLS 55A Stack | ArduCopter-supported, [official docs](https://ardupilot.org/copter/docs/common-speedybeef4-v3.html) |
+| Flight controller + ESC | F4/H7 stack, 30.5×30.5mm | Holybro Kakute H7 v1.5 + Tekko32 F4 50A ESC | ArduCopter target `KakuteH7` (4.2.0+). SpeedyBee F405 V4 was the original choice; flipped 2026-05-11 after it went OOS at all distributors. |
 | FC firmware | ArduCopter ≥4.5 | | Board ships with Betaflight — first flash via DFU |
 | IMU | ICM-42688P | Onboard FC | |
 | Barometer | Onboard FC | | |

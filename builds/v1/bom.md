@@ -1,8 +1,8 @@
 # v1 — Bill of Materials
 
-**Status:** Ready to order
-**Version:** v1.1
-**Last verified:** 2026-05-05
+**Status:** Ordering in progress
+**Version:** v1.2
+**Last verified:** 2026-05-11
 **Vendor policy:** GetFPV preferred → RDQ → mfr-direct → Amazon (non-flight only)
 
 > **Note on freshness:** Vendors and prices change. Verify each line at order time using the linked catalog entry (which holds the ranked SKU list and last-known prices). After ordering, this file becomes a frozen procurement record.
@@ -16,14 +16,14 @@
 | # | Catalog | Description | Qty | Unit (last seen) | Subtotal | Notes |
 |---|---|---|---|---|---|---|
 | 1 | [cat-001](../../hardware-library/parts-catalog/cat-001-frame-5in.md) | 5" frame (Source One V5) | 1 | $39 | $39 | TBS-branded at GetFPV preferred |
-| 2 | [cat-002](../../hardware-library/parts-catalog/cat-002-fc-stack-30x30.md) | F405 V4 BLS 55A 30×30 stack | 1 | $94 | $94 | ArduCopter-supported |
+| 2 | [cat-002](../../hardware-library/parts-catalog/cat-002-fc-stack-30x30.md) | Kakute H7 v1.5 + Tekko32 F4 50A stack | 1 | $125 | $125 | ArduCopter `KakuteH7` target — SpeedyBee F405 V4 OOS, rank-1 promoted 2026-05-11 |
 | 3 | [cat-003](../../hardware-library/parts-catalog/cat-003-motor-2207.md) | 2207 1900KV motors | 4 | $20 | $80 | Order set of 4 |
 | 4 | [cat-004](../../hardware-library/parts-catalog/cat-004-prop-5in-tri.md) | 5×4.3×3 tri-blade props | 16 | $1 | $16 | 4 sets of 4 |
 | 5 | [cat-005](../../hardware-library/parts-catalog/cat-005-gps-compass.md) | M10 GPS + compass (Holybro) | 1 | $45 | $45 | **Replaced Matek M10Q-5883 (EOL)** |
 | 6 | [cat-006](../../hardware-library/parts-catalog/cat-006-rx-elrs-24ghz.md) | ELRS 2.4GHz RX (Tower antenna) | 1 | $9 | $9 | Tower variant for canopy-mount build |
 | 7 | [cat-007](../../hardware-library/parts-catalog/cat-007-telem-radio-915mhz.md) | SiK V3 915MHz pair, **100mW** | 1 pair | $60 | $60 | 100mW chosen — range margin sufficient |
-| 8 | [cat-002](../../hardware-library/parts-catalog/cat-002-fc-stack-30x30.md) | Spare FC + ESC stack | 1 | $94 | $94 | Hedge against first-build solder mistakes |
-| | | **Airframe + electronics subtotal** | | | **$437** | |
+| 8 | [cat-002](../../hardware-library/parts-catalog/cat-002-fc-stack-30x30.md) | Spare FC + ESC stack | 1 | $125 | $125 | Hedge against first-build solder mistakes |
+| | | **Airframe + electronics subtotal** | | | **$499** | |
 
 ## Power & charging
 
@@ -78,7 +78,7 @@
 
 | Category | Cost |
 |---|---|
-| Airframe + electronics (incl. spare FC) | $437 |
+| Airframe + electronics (incl. spare FC) | $499 |
 | Power & charging | $212 |
 | Radio (TX) | $80 |
 | Ground station | $408 |
@@ -86,17 +86,22 @@
 | Hardware | $81 |
 | Tools (see `tooling.md`) | $311 |
 | Solder consumables (cat-014, included in tooling) | — |
-| **Total v1 build** | **~$1,591** |
+| **Total v1 build** | **~$1,653** |
 
 ### Per-airframe cost (v2+ when tools/radio/laptop already owned)
 
-- Airframe + electronics minus spare FC: $343
-- 4 batteries: ~$112 (some reusable from v1)
+- Airframe + electronics minus spare FC: $374
+- 4 batteries: ~$126 (some reusable from v1)
 - Filament (per-print share): ~$10
 - Hardware: ~$30
-- **Per-additional-airframe: ~$370–490**
+- **Per-additional-airframe: ~$400–540**
 
 ---
+
+## Changes from v1.1 (2026-05-11)
+
+1. **FC stack swap.** SpeedyBee F405 V4 BLS 55A → **Holybro Kakute H7 v1.5 + Tekko32 F4 4in1 50A ESC** ($94 → $125, +$31/unit, +$62 total with spare). V4 went OOS at GetFPV, Pyrodrone, and Amazon during procurement. Kakute H7 is ArduPilot-supported as target `KakuteH7`, ICM-42688P + H7 MCU (better than spec floor), 30.5×30.5mm (drop-in mounting), AM32 ESC firmware (DSHOT600 + bidi-DSHOT standard). GPS pad pinout note in "Outstanding flags" updated. Firmware README rewritten with branch-on-receipt flash procedure.
+2. **Catalog edits driven by 2026-05-10 procurement re-research.** See `hardware-library/parts-catalog/` git history: cat-002 URL fix, cat-003 multi-variant page, cat-005 vendor swap to Holybro-direct, cat-006 Tower-variant URL pin, cat-007 price drop refresh, cat-008 spec bump to ≥100C with V2.0 130C as rank-1, cat-010 AMS-compatibility correction.
 
 ## Changes from v1.0
 
@@ -115,4 +120,4 @@ Driven by procurement research run on 2026-05-04:
 
 - Verify GetFPV stock at order time. Some core items were OOS as of 2026-05-04 — consider rank-2 SKUs in each catalog entry if still OOS.
 - Toughbook CF-54 listings vary widely on eBay. Verify "daylight-readable" (sometimes called "outdoor display" or "sunlight-readable") in the listing photos before buying.
-- Holybro M10 V2 cable connector may need clipping/resoldering to match SpeedyBee F405 V4 GPS pads. Plan for ~10 min of extra solder work.
+- Holybro M10 V2 cable connector may need clipping/resoldering to match Kakute H7 v1.5 GPS port (JST GH 6-pin). Plan for ~10 min of extra solder work.
