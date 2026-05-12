@@ -8,7 +8,7 @@ Printed parts for the v1 airframe.
 |---|---|---|---|
 | `canopy/` | Top canopy + GPS/RX mount | PETG | ⚪ Not designed |
 | `gps-mast/` | GPS mast (≥80mm tall, RF-transparent) | PETG | 🟡 v1 designed, awaiting print + fit-check |
-| `antenna-mounts/` | ELRS receiver antenna tubes (×2) | TPU 95A | ⚪ Not designed |
+| `antenna-mounts/` | ELRS receiver mount for BetaFPV ELRS Lite V1.2 Flat (×1) | TPU 95A | 🟡 v1 designed, awaiting print + fit-check |
 | `battery-tray/` | Battery tray + Velcro strap loop | PETG | ⚪ Not designed |
 | `motor-soft-mounts/` | Vibration-isolating motor mounts | TPU 95A | ⚪ Not designed |
 | `standoffs/` | M3 frame standoffs (optional, can buy aluminum) | TPU 95A | ⚪ Not designed |

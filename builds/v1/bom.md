@@ -20,7 +20,7 @@
 | 3 | [cat-003](../../hardware-library/parts-catalog/cat-003-motor-2207.md) | 2207 1900KV motors | 4 | $20 | $80 | Order set of 4 |
 | 4 | [cat-004](../../hardware-library/parts-catalog/cat-004-prop-5in-tri.md) | 5×4.3×3 tri-blade props | 16 | $1 | $16 | 4 sets of 4 |
 | 5 | [cat-005](../../hardware-library/parts-catalog/cat-005-gps-compass.md) | M10 GPS + compass (Holybro) | 1 | $45 | $45 | **Replaced Matek M10Q-5883 (EOL)** |
-| 6 | [cat-006](../../hardware-library/parts-catalog/cat-006-rx-elrs-24ghz.md) | ELRS 2.4GHz RX (Tower antenna) | 1 | $9 | $9 | Tower variant for canopy-mount build |
+| 6 | [cat-006](../../hardware-library/parts-catalog/cat-006-rx-elrs-24ghz.md) | ELRS 2.4GHz RX (Flat V1.2) | 1 | $9 | $9 | Tower variant discontinued at BetaFPV; Flat V1.2 substituted 2026-05-11 (integrated SMD antenna in both — equivalent functionally) |
 | 7 | [cat-007](../../hardware-library/parts-catalog/cat-007-telem-radio-915mhz.md) | SiK V3 915MHz pair, **100mW** | 1 pair | $60 | $60 | 100mW chosen — range margin sufficient |
 | 8 | [cat-002](../../hardware-library/parts-catalog/cat-002-fc-stack-30x30.md) | Spare FC + ESC stack | 1 | $125 | $125 | Hedge against first-build solder mistakes |
 | | | **Airframe + electronics subtotal** | | | **$499** | |
