@@ -2,7 +2,7 @@
 
 **Catalog ID:** cat-008
 **Status:** active
-**Last verified:** 2026-05-10
+**Last verified:** 2026-05-11
 
 ## Abstract spec
 
@@ -12,13 +12,13 @@
 - XT60 connector
 - JST-XH balance lead
 - ≤180g
-- ≤90mm × 35mm × 30mm physical envelope (fits Source One V5 battery tray)
+- ≤90 × 38 × 35 mm physical envelope (fits the printed battery tray at `builds/v1/cad/battery-tray/`). **Envelope loosened 2026-05-11** — the original ≤90 × 35 × 30 mm spec under-specified the rank-1 CNHL V2.0 130C pack (actual 76 × 36 × 33 mm), forcing a 1–3 mm interference on two axes. Envelope now reflects the verified rank-1 pack plus ~2 mm headroom.
 
 ## Ranked SKUs
 
 | Rank | Mfr part | Vendor | URL | Unit price | Notes |
 |---|---|---|---|---|---|
-| 1 | CNHL Black Series V2.0 1500mAh 4S 130C XT60 | GetFPV | https://www.getfpv.com/ | $31.49 | in stock at GetFPV 2026-05-10. **130C strictly exceeds the spec floor.** Verify exact URL at order time. Replaces the V1 100C SKU which is no longer carried. |
+| 1 | CNHL Black Series V2.0 1500mAh 4S 130C XT60 | GetFPV | https://www.getfpv.com/cnhl-black-series-v2-0-130c-4s-lipo-battery-1500mah.html | $31.49 | in stock at GetFPV 2026-05-10. **130C strictly exceeds the spec floor.** Verified physical dimensions: 76 × 36 × 33 mm, 164 g (multi-distributor confirmation 2026-05-11). Replaces the V1 100C SKU which is no longer carried. |
 | 2 | CNHL Black Series 1500mAh 4S 100C XT60 (V1, older) | CNHL US warehouse | https://cnhl-us.com/ (verify URL at order time) | ~$21 | cheaper, older V1 spec — only use if rank-1 unavailable |
 | 3 | Tattu R-Line 1550mAh 4S 100C | GetFPV | https://www.getfpv.com/ | ~$32 | premium alternative; verify URL at order time |
 
