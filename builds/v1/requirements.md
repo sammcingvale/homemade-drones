@@ -207,10 +207,10 @@ US, FAA jurisdiction.
 
 | Item | Requirement | Status |
 |---|---|---|
-| FAA recreational registration | Required >250g | Owner action — will complete day 1 |
+| FAA recreational registration | Required >250g | ✅ Completed 2026-05-11 |
 | Remote ID | Required >250g since Sept 2023 | ArduPilot built-in broadcast |
 | Part 107 | Commercial only | Not needed |
-| Flight area | TRUST cert + Class G airspace | Owner action — will complete day 1 |
+| Flight area | TRUST cert + Class G airspace | ✅ TRUST completed 2026-05-11; airspace verified per flight |
 | LAANC | Controlled airspace only | Avoid for v1 |
 | Insurance | Optional | AMA membership recommended |
 
